@@ -6,6 +6,7 @@
     --Medium-Grey: hsl(216, 12%, 54%);
     --Dark-Blue: hsl(213, 19%, 18%);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
 }
 
 *{
@@ -25,6 +26,93 @@
 .box{
     width: 350px;
     height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     background: var(--Dark-Blue);
     border-radius: 10%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.star-area{
+    margin-bottom: 30px;
+}
+
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--Very-Dark-Blue);
+    color: var(--Orange);
+}
+
+.text-area > h2{
+    color: var(--White);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.text-area > p{
+    color: var(--Light-Grey);
+    font-weight: 400;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.ratings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.ratings > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--Very-Dark-Blue);
+    color: var(--Light-Grey);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.ratings > div:hover{
+    background: var(--Medium-Grey);
+    color: var(--White);
+}
+
+.ratings > div:focus{
+    background: var(--Orange);
+    color: var(--White);
+}
+
+.form > button{
+    border: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    height: 35px;
+    color: var(--White);
+    background: var(--Orange);
+    text-align: center;
+    cursor: pointer;
+}
+
+.form > button:active{
+    background: var(--White);
+    color: var(--Orange);
 }
